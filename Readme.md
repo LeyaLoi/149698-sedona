@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Leya Loi](https://up.htmlacademy.ru/htmlcss/13/user/149698).
-* Наставник: `Неизвестно`.
+* Наставник: [Альбина Токарчук](https://up.htmlacademy.ru/htmlcss/13/user/167491).
 
 ---
 
