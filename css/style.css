@@ -23,7 +23,7 @@ h2 {
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 .clearfix::after {
     content: "";
@@ -81,10 +81,10 @@ h2 {
 }
 .features .blue {
     background-color: #81b3d2;
-    color: #fff;
+    color: #ffffff;
 }
 .features .gray {
-    background-color: #eee;
+    background-color: #eeeeee;
 }
 .search {
     width: 576px;
@@ -103,7 +103,7 @@ h2 {
     padding: 30px 0px;
     margin: 0 auto;
     background-color: #766357;
-    color: #fff;
+    color: #ffffff;
 }
 .search-form {
     width: 576px;
@@ -139,7 +139,7 @@ div.details-part:last-child {
     height: 38px;
     background-color: #f2f2f2;
     vertical-align: middle;
-    margin:0 -4px;
+    margin: 0 -4px;
 }
 .details-part label {
     margin-right: 50px;
@@ -155,7 +155,7 @@ div.details-part:last-child {
 }
 .footer-lay-out {
     float: left;
-    width:33%;
+    width: 33%;
     text-align: center;
     padding: 35px 0;
 }
@@ -164,13 +164,77 @@ div.details-part:last-child {
 .search-options {
     width:1200px;
     height: 217px;
+    color: #ffffff;
     background: #4d7faa url("../img/catalog-logo.jpg") no-repeat;
 }
 .search-options form {
-    width: 1040px;
+    width: 1060px;
     margin: 0 auto;
     padding: 30px 0;
 }
 .filter {
     float: left;
+    width: 240px;
+}
+div.filter:last-child {
+    float: right;
+    width: 330px;
+}
+.filter .filter-item {
+    padding-top: 25px;
+}
+.filter-range {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-color: #ffffff;
+    border-radius: 50% 50%;
+}
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+.content-item {
+    padding: 30px 70px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.content .lay-out:first-child {
+    float: left;
+    width: 165px;
+}
+.content .lay-out:nth-child(2) {
+    float: left;
+    width: 655px;
+}
+.content .lay-out:last-child {
+    float: right;
+    width: 240px;
+    text-align: right;
+}
+ul.sort  {
+    display: inline-block;
+}
+ul.sort li {
+    display: inline-block;
+    padding-left: 33px;
+}
+.block1 {
+    float: left;
+    width: 112px;
+}
+.block2 {
+    float: left;
+    width: 145px;
+}
+.block1 p,
+.block2 p {
+    padding: 15px 0;
+}
+.btn {
+    padding: 4px 16px;
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+.btn-rezerve {
+    background-color: #766357;
 }
