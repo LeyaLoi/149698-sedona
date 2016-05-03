@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Каталог</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -20,7 +22,7 @@
                             <a href="#">Фото и видео</a>
                         </li>
                         <li>
-                            <a href="#">Гостиницы</a>
+                            <a class="active">Гостиницы</a>
                         </li>
                         <li>
                             <a href="#">Карта штата</a>
@@ -83,16 +85,17 @@
                             <h2>Найдено: 3</h2>
                         </div>
                         <div class="lay-out">
-                            <span>Сортировка:</span>
+                            <span class="sort-caption">Сортировка:</span>
                             <ul class="sort">
-                                <li>По цене</li>
-                                <li>По типу</li>
-                                <li>По рейтингу</li>
+                                <li><a class="active">По цене</a></li>
+                                <li><a href="#">По типу</a></li>
+                                <li><a href="#">По рейтингу</a></li>
                             </ul>
                         </div>
                         <div class="lay-out">
                             <div class="icon-sort">
-                                <i class="up"></i><i class="down"></i>
+                                <span class="icon-up-dir"></span>
+                                <span class="active icon-down-dir"></span>
                             </div>
                         </div>
                     </div>
@@ -101,10 +104,10 @@
                             <img src="img/hotel-amara.jpg" alt="Фотография гостиницы" width="135" height="90">
                         </div>
                         <div class="lay-out">
-                            <h2><a href="#">Amara resort &#38; spa</a></h2>
+                            <h2><a class="hotel-name" href="#">Amara resort &#38; spa</a></h2>
                             <div class="hotel-details">
                                 <p>Гостиница</p>
-                                <a class="btn" href="#">Подробнее</a>
+                                <a class="btn btn-details" href="#">Подробнее</a>
                             </div>
                             <div class="hotel-reserve">
                                 <p>От 3500р.</p>
@@ -112,11 +115,15 @@
                             </div>
                         </div>
                         <div class="lay-out">
-                            <div class="icon-sort">
-                                <i></i>
+                            <div class="icon-rating">
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
                             </div>
                             <div class="rating">
-                                Рейтинг: 8.5
+                                <span>Рейтинг: 8.5</span>
                             </div>
                         </div>
                     </div>
@@ -125,10 +132,10 @@
                             <img src="img/hotel-desert.jpg" alt="Фотография гостиницы" width="135" height="90">
                         </div>
                         <div class="lay-out">
-                            <h2><a href="#">Desert Quail inn</a></h2>
+                            <h2><a class="hotel-name" href="#">Desert Quail inn</a></h2>
                             <div class="hotel-details">
                                 <p>Мотель</p>
-                                <a class="btn" href="#">Подробнее</a>
+                                <a class="btn btn-details" href="#">Подробнее</a>
                             </div>
                             <div class="hotel-reserve">
                                 <p>От 2000р.</p>
@@ -136,11 +143,12 @@
                             </div>
                         </div>
                         <div class="lay-out">
-                            <div class="icon-sort">
-                                <i></i>
+                            <div class="icon-rating">
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
                             </div>
                             <div class="rating">
-                                Рейтинг: 8.9
+                                <span>Рейтинг: 8.9</span>
                             </div>
                         </div>
                     </div>
@@ -149,10 +157,10 @@
                             <img src="img/hotel-villas.jpg" alt="Фотография гостиницы" width="135" height="90">
                         </div>
                         <div class="lay-out">
-                            <h2><a href="#">Villas at Poco Diablo</a></h2>
+                            <h2><a class="hotel-name" href="#">Villas at Poco Diablo</a></h2>
                             <div class="hotel-details">
                                 <p>Апартаменты</p>
-                                <a class="btn" href="#">Подробнее</a>
+                                <a class="btn btn-details" href="#">Подробнее</a>
                             </div>
                             <div class="hotel-reserve">
                                 <p>От 4000р.</p>
@@ -160,11 +168,13 @@
                             </div>
                         </div>
                         <div class="lay-out">
-                            <div class="icon-sort">
-                                <i></i>
+                            <div class="icon-rating">
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
                             </div>
                             <div class="rating">
-                                Рейтинг: 8.5
+                                <span>Рейтинг: 8.5</span>
                             </div>
                         </div>
                     </div>
@@ -172,18 +182,20 @@
             </main>
             <footer class="main-footer">
                 <div class="footer-lay-out">
-                    <span>#Visitsedona</span>
+                    <span class="visitsedona">#Visitsedona</span>
                 </div>
                 <div class="footer-lay-out">
                     <div class="social">
-                        <a class="social-btn social-tt" href="#">Твиттер</a>
-                        <a class="social-btn social-fb" href="#">Фэйсбук</a>
-                        <a class="social-btn social-yt" href="#">Ютуб</a>
+                        <a class="social-btn" href="#">Твиттер<span class="icon-twitter"></span></a>
+                        <a class="social-btn" href="#">Фэйсбук<span class="icon-facebook"></span></a>
+                        <a class="social-btn" href="#">Ютуб<span class="icon-youtube"></span></a>
                     </div>
                 </div>
                 <div class="footer-lay-out">
                     <span>Website by</span>
-                    <a class="developer" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" alt="Htmlacademy" width="113" height="39"></a>
+                    <a class="developer" href="https://htmlacademy.ru">
+                        <!--<img src="img/logo-htmlacademy.png" alt="Htmlacademy"
+                         width="113" height="39"> --></a>
                 </div>
             </footer>
         </div>
