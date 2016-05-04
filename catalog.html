@@ -64,18 +64,21 @@
                             </div>
                         </div>
                         <div class="filter">
-                            <h3>Стоимость в сутки(р):</h3>
+                            <h3>Стоимость в сутки (р):</h3>
                             <div class="filter-price">
-                                <input type="text" value="от 0">
-                                <input type="text" value="до 3000">
-                                <div class="filter-container">
-                                    <div class="filter-range"></div>
-                                    <div class="filter-range"></div><hr>
+                                <label class="min-price" for="min-price">от
+                                <input type="text" id="min-price" name="min-price" value="0"></label>
+                                <label class="max-price" for="max-price">до
+                                <input type="text" id="max-price" name="max-price" value="3000"></label>
+                            </div>
+                            <div class="filter-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
                                 </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
                             </div>
-                            <div>
-                                <input type="submit" value="Показать">
-                            </div>
+                            <button class="btn-transparent" type="submit">Показать</button>
                         </div>
                     </form>
                 </div>
@@ -174,13 +177,13 @@
                                 <span class="icon-star"></span>
                             </div>
                             <div class="rating">
-                                <span>Рейтинг: 8.5</span>
+                                <span>Рейтинг: 9.2</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </main>
-            <footer class="main-footer">
+            <footer class="main-footer clearfix">
                 <div class="footer-lay-out">
                     <span class="visitsedona">#Visitsedona</span>
                 </div>
