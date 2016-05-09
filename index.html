@@ -17,13 +17,13 @@
                 <nav class="navigation">
                     <ul class="clearfix">
                         <li>
-                            <a class="active">Информация</a>
+                            <a href="#">Информация</a>
                         </li>
                         <li>
                             <a href="#">Фото и видео</a>
                         </li>
                         <li>
-                            <a href="#">Гостиницы</a>
+                            <a href="catalog.html">Гостиницы</a>
                         </li>
                         <li>
                             <a href="#">Карта штата</a>
@@ -118,12 +118,12 @@
                     <h3 class="search-btn">Поиск гостиницы в Седоне</h3>
                     <div class="search-form">
                         <form action="https://echo.htmlacademy.ru" name="searh-hotel" method="post">
-                            <div class="details">
+                            <div class="details date">
                                 <label for="date-arrival">Дата заезда:</label>
                                 <input type="text" id="date-arrival" name="date-arrival" placeholder="24 апреля 2016">
                                 <div class="icon icon-calendar"></div>
                             </div>
-                            <div class="details">
+                            <div class="details date">
                                 <label for="date-departure">Дата выезда:</label>
                                 <input type="text" id="date-departure" name="date-departure" placeholder="4 июля 2016">
                                 <div class="icon icon-calendar"></div>
@@ -139,17 +139,24 @@
                                     <label for="child">Дети:</label>
                                     <span class="btn icon-minus"></span>
                                     <input type="text" id="child" name="child" value="0">
-                                    <span class="btn icon-plus"</span>
+                                    <span class="btn icon-plus"></span>
                                 </div>
                             </div>
                             <input type="submit" value="найти">
                         </form>
                     </div>
                 </div>
-                <div class="map">
-                    <img src="img/map.jpg" alt="Карта Sedona" width="1200" height="473">
-                </div>
+                <!-- <div class="map">
+                    <div class="background-map"></div>
+                    <img src="img/background-map.jpg" alt="Карта Sedona" width="1200" height="473">
+                </div> -->
             </main>
+            <div class="map">
+                <div class="background-map">
+                <img src="img/background-map.jpg" alt="Карта Sedona" width="1200" height="473">
+                </div>
+            </div>
+
             <footer class="main-footer clearfix">
                 <div class="footer-lay-out">
                     <span class="visitsedona">#Visitsedona</span>

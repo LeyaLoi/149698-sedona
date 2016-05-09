@@ -1,7 +1,6 @@
 body {
     font-size: 14px;
     line-height: 21px;
-    font-weight: bold;
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     color: #000000;
@@ -46,6 +45,10 @@ body {
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 h1 {
     font-size: 30px;
     line-height: 24px;
@@ -58,6 +61,7 @@ h2 {
     width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
+    box-shadow: 0 0px 15px 5px rgba(0, 1, 1, 0.2);
 }
 .clearfix::after {
     content: "";
@@ -75,8 +79,6 @@ h2 {
     margin: 0;
     padding: 0 6%;
     list-style: none;
-    /*width: 1060px;*/
-    /*margin: 0 auto;*/
     font-size: 0px;
 }
 .navigation li {
@@ -102,23 +104,24 @@ h2 {
 .navigation li:nth-child(4) {
     padding-right: 31px;
 }
-.navigation li a{
+.navigation  a {
+    font-weight: bold;
     color: #000000;
-    text-decoration: none;a3c7de
+    text-decoration: none;
 }
-.navigation li a:hover{
+.navigation  a:hover {
     color: #a3c7de;
 }
-.navigation li a:active {
+.navigation  a:active {
     color: #b2b2b2;
 }
-.navigation li a.active {
+.navigation  a.active {
     color: #766357;
 }
-.navigation li a.active:hover {
+.navigation  a.active:hover {
     color: #604e43;
 }
-.navigation li a.active:active {
+.navigation  a.active:active {
     color: #d6d0cc;
 }
 .index-logo {
@@ -139,36 +142,39 @@ h2 {
 }
 .index-slogan p {
     line-height: 26px;
-    font-weight: normal;
 }
 .features {
     width: 1200px;
+    line-height: 0;
 }
 .features-one-part {
     float: left;
     width: 300px;
-    /*min-height: 204px;*/
     padding-top: 52px;
     padding-right: 50px;
     padding-left: 50px;
     text-align: center;
-    font-weight: normal;
+    line-height: 21px;
 }
 .features-name {
     width: 51%;
     margin: 0 auto;
     font-size: 21px;
 }
-.features-two-part {
-    float: left;
-    width: 800px;
-    /*height: 256px;*/
-}
 .features-bgblue {
     color: #ffffff;
     background-color: #81b3d2;
 }
+.features .features-two-part {
+    float: left;
+    width: 800px;
+}
+.features-two-part img {
+    width: 800px;
+    height: 256px;
+}
 .features-bggray {
+    padding-bottom: 45px;
     background-color: #eeeeee;
 }
 .features-one-part h3,
@@ -180,24 +186,15 @@ h2 {
 }
 .features-one-part.big {
     padding-top: 60px;
-    padding-bottom: 67px;
+    padding-bottom: 58px;
 }
-/*.features .blue {
-    color: #ffffff;
-    background-color: #81b3d2;*/
-}
-/*.features .gray {
-    height: 211px;
-    padding-top: 45px;
-    background-color: #eeeeee;
-}*/
 .features-icon {
-    width: 75px;
+    width: 76px;
     height: 76px;
-    margin: 0 auto;
-    margin-bottom: 25px;
+    margin: 0 auto 25px;
 }
 .search {
+    position: relative;
     width: 568px;
     margin: 0 auto;
     padding-top: 30px;
@@ -210,7 +207,6 @@ h2 {
 }
 .search p {
     margin-bottom: 45px;
-    font-weight: normal;
     line-height: 24px;
 }
 .search-btn {
@@ -223,39 +219,48 @@ h2 {
     background-color: #766357;
 }
 .search-form {
+    position: absolute;
+    top: 100%;
+    z-index: 20;
     width: 568px;
     margin:0 auto;
     padding: 55px;
     font-size: inherit;
     line-height: 26px;
     box-sizing: border-box;
-    /*display: none;*/
+    box-shadow: 0 7px 7px 3px rgba(0, 1, 1, 0.1);
+    background-color: #ffffff;
+    /**/
 }
+
 .details {
     position: relative;
     padding-bottom: 30px;
 }
 .details label {
     margin-right: 20px;
+    font-weight: bold;
 }
-.details input[type="text"] {
-    width: 342px;
+.date input[type="text"] {
+    width: 340px;
     height: 38px;
     font-size: 14px;
     font-family: inherit;
-    text-transform: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
     line-height: 26px;
-    padding: 0 6px;
+    padding: 0 15px;
+    padding-right: 35px;
     box-sizing: border-box;
     border: none;
     background-color: #f2f2f2;
 }
-.details input[type="text"]:hover {
+.date input[type="text"]:hover {
     background-color: #ebebeb;
     border: none;
 }
-.details input[type="text"]:focus {
-    padding: 0 4px;
+.date input[type="text"]:focus {
+    padding: 0 15px;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     outline: none;
@@ -263,7 +268,7 @@ h2 {
 .details .icon {
     position: absolute;
     bottom: 37px;
-    right: 6px;
+    right: 10px;
     font-size: 21px;
     line-height: 26px;
 }
@@ -278,12 +283,12 @@ h2 {
 }
 .details-part {
     float: left;
+    width: 229px;
 }
 .details-part:last-child {
     float: right;
 }
 .details-part .btn {
-    position: relative;
     display: inline-block;
     width: 38px;
     height: 38px;
@@ -291,15 +296,19 @@ h2 {
     font-size: 14px;
     line-height: 38px;
     color: #a9a9a9;
-    /*padding-top: 10px;*/
     vertical-align: middle;
     background-color: #f2f2f2;
 }
 .details-part .btn:hover {
+    color: #000000;
     cursor: pointer;
 }
+.details-part .btn:active {
+    color: #81b3d2;
+}
+
 .details-part label {
-    margin-right: 50px;
+    margin-right: 48px;
 }
 .details-part input[type="text"] {
     width: 37px;
@@ -311,19 +320,17 @@ h2 {
     line-height: 38px;
     box-sizing: border-box;
     vertical-align: middle;
+    color: #000000;
     background-color: #f2f2f2;
     border: none;
     outline: none;
 }
 .details-part input[type="text"]:hover {
-    padding-left: 14px;
-    background-color: #f2f2f2;
     border: none;
     outline: none;
 }
 .details-part input[type="text"]:focus {
     padding-left: 14px;
-    background-color: #f2f2f2;
     border: none;
     outline: none;
 }
@@ -334,6 +341,7 @@ h2 {
     padding: 15px 0;
     font-size: 21px;
     line-height: 26px;
+    font-weight: bold;
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     color: #ffffff;
@@ -346,6 +354,22 @@ h2 {
 .search-form input[type="submit"]:active {
     color: #88b6d1;
     background-color: #5496bd;
+}
+.map {
+    position: relative;
+    height: 473px;
+}
+.background-map  {
+    position: absolute;
+    /*z-index: 1;*/
+    width: 1200px;
+    height: 593px;
+    background: rgba(254, 254, 254, 0.5) url("../img/new-map.png") no-repeat;
+}
+.main-footer {
+    /*z-index: 100;*/
+    /*background-color: red;*/
+    background-color: rgba(254, 254, 254, 0.9);
 }
 .footer-lay-out {
     position: relative;
@@ -368,7 +392,6 @@ h2 {
     padding-right: 0px;
 }
 .social-btn {
-    /*position: relative;*/
     display: inline-block;
     vertical-align: top;
     width: 46px;
@@ -376,6 +399,9 @@ h2 {
     font-size: 0px;
     background-color: #81b3d2;
     text-align: center;
+}
+.social-btn {
+    text-decoration: none;
 }
 .social-btn span {
     font-size: 19px;
@@ -444,7 +470,6 @@ input[type="checkbox"] + label {
     position: relative;
     display: block;
     padding-left: 40px;
-    font-weight: normal;
     cursor: pointer;
 }
 input[type="checkbox"] + label::before {
@@ -499,13 +524,14 @@ input[type="checkbox"]:checked:disabled + label {
     width: 2px;
     height: 22px;
     background-color: #ffffff;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 .filter-price label {
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
-    font-weight: normal;
     line-height: 38px;
     cursor: pointer;
 }
@@ -534,7 +560,7 @@ input[type="checkbox"]:checked:disabled + label {
 .filter-controls .bar {
     width: 80%;
     height: 2px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 1);
 }
 .filter-controls .toggle {
     position: absolute;
@@ -562,7 +588,6 @@ input[type="checkbox"]:checked:disabled + label {
     padding: 6px 35px;
     font-size: 14px;
     line-height: 21px;
-    font-weight: normal;
     color: #ffffff;
     text-transform: uppercase;
     background-color: transparent;
@@ -647,6 +672,7 @@ input[type="checkbox"]:checked:disabled + label {
     font-size: inherit;
     line-height: inherit;
     font-family: inherit;
+    font-weight: bold;
     text-transform: inherit;
     text-decoration: none;
 }
@@ -674,9 +700,10 @@ input[type="checkbox"]:checked:disabled + label {
 .hotel-reserve p {
     margin: 0;
     padding: 10px 0;
-    font-weight: normal;
+    color: #333333;
 }
-.hotel-details .btn {
+.hotel-details .btn,
+.hotel-reserve .btn {
     padding: 4px 16px;
     color: #ffffff;
 }
