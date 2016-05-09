@@ -217,6 +217,7 @@ h2 {
     line-height: 26px;
     color: #ffffff;
     background-color: #766357;
+    cursor: pointer;
 }
 .search-form {
     position: absolute;
@@ -230,9 +231,11 @@ h2 {
     box-sizing: border-box;
     box-shadow: 0 7px 7px 3px rgba(0, 1, 1, 0.1);
     background-color: #ffffff;
-    /**/
+    display: none;
 }
-
+.search-form-on {
+    display: block;
+}
 .details {
     position: relative;
     padding-bottom: 30px;

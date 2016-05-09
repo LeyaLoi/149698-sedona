@@ -176,5 +176,13 @@
                 </div>
             </footer>
         </div>
+        <script>
+            var link = document.querySelector(".search-btn");
+            var popup = document.querySelector(".search-form");
+            link.addEventListener("click", function() {
+                // event.preventDefault();
+                popup.classList.add("search-form-on");
+            });
+        </script>
     </body>
 </html>
