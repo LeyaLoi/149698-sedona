@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Седона</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -21,7 +23,7 @@
                             <a href="#">Фото и видео</a>
                         </li>
                         <li>
-                            <a href="#">Гостиницы</a>
+                            <a href="catalog.html">Гостиницы</a>
                         </li>
                         <li>
                             <a href="#">Карта штата</a>
@@ -43,10 +45,10 @@
                         Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
                     </p>
                 </div>
-                <section class="features clearfix">
+                <section class="features features-bgblue clearfix">
                     <div class="features-one-part blue">
                         <h3 class="features-name">Настоящий городок</h3>
-                        <p class="space">&mdash; 1 &mdash;</p>
+                        <p class="space">&mdash; №1 &mdash;</p>
                         <p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
                     </div>
                     <div class="features-two-part">
@@ -60,7 +62,7 @@
                             <img src="img/icon-house.png" alt="Домик" width="75" height="72">
                         </div>
                         <h3 class="features-name">Жилье</h3>
-                        <p>Рекомедуем пожить в настоящем отеле, все как в кино!</p>
+                        <p>Рекомедуем пожить в настоящем мотеле, все как в кино!</p>
                     </div>
                     <div class="features-one-part big">
                         <div class="features-icon">
@@ -77,31 +79,31 @@
                         <p>Не только китайского, но и местного производства!</p>
                     </div>
                 </section>
-                <section class="features clearfix">
+                <section class="features features-bgblue clearfix">
                     <div class="features-two-part ">
                         <img src="img/bridge.jpg"
                         alt="Фото - мост дьявола" width="800" height="256">
                     </div>
                      <div class="features-one-part blue">
-                        <h3 class="features-name">Там есть мост дьявол</h3>
-                        <p class="space">&mdash; 2 &mdash;</p>
+                        <h3 class="features-name">Там есть <br>мост дьявола</h3>
+                        <p class="space">&mdash; №2 &mdash;</p>
                         <p>Да по нему можно пройти! Если конечно вы осмелитесь</p>
                     </div>
                 </section>
-                <section class="features clearfix">
+                <section class="features features-bggray clearfix">
                     <div class="features-one-part gray">
                         <h3 class="features-name">Небольшая площадь</h3>
-                        <p class="space">&mdash; 3 &mdash;</p>
-                        <p>Все достопримечательности находяться очень близко</p>
+                        <p class="space">&mdash; №3 &mdash;</p>
+                        <p>Все достопримечательности <br>находятся очень близко</p>
                     </div>
                     <div class="features-one-part gray">
                         <h3 class="features-name">Красивая дорога</h3>
-                        <p class="space">&mdash; 4 &mdash;</p>
-                        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                        <p class="space">&mdash; №4 &mdash;</p>
+                        <p>Ехать в Седону из Лас-Вегаса совсем <br>не скучно!</p>
                     </div>
                     <div class="features-one-part gray">
                         <h3 class="features-name">Мало туристов</h3>
-                        <p class="space">&mdash; 5 &mdash;</p>
+                        <p class="space">&mdash; №5 &mdash;</p>
                         <p>Большинство едет в Гранд Каньон и толпится там</p>
                     </div>
                 </section>
@@ -116,54 +118,54 @@
                     <h3 class="search-btn">Поиск гостиницы в Седоне</h3>
                     <div class="search-form">
                         <form action="https://echo.htmlacademy.ru" name="searh-hotel" method="post">
-                            <div class="details">
+                            <div class="details date">
                                 <label for="date-arrival">Дата заезда:</label>
-                                <input type="date" id="date-arrival" name="date-arrival">
+                                <input type="text" id="date-arrival" name="date-arrival" placeholder="24 апреля 2016">
                                 <div class="icon icon-calendar"></div>
                             </div>
-                            <div class="details">
+                            <div class="details date">
                                 <label for="date-departure">Дата выезда:</label>
-                                <input type="date" id="date-departure" name="date-departure">
+                                <input type="text" id="date-departure" name="date-departure" placeholder="4 июля 2016">
                                 <div class="icon icon-calendar"></div>
                             </div>
                             <div class="details clearfix">
                                 <div class="details-part">
                                     <label for="people">Взрослые:</label>
-                                    <span class="minus">-</span>
-                                    <input type="text" id="people" name="people" value="1">
-                                    <span class="plus">+</span>
+                                    <span class="btn icon-minus"></span>
+                                    <input type="text" id="people" name="people" value="2">
+                                    <span class="btn icon-plus"></span>
                                 </div>
                                 <div class="details-part">
                                     <label for="child">Дети:</label>
-                                    <span class="minus">-</span>
-                                    <input type="text" id="child" name="child" value="1">
-                                    <span class="plus">+</span>
+                                    <span class="btn icon-minus"></span>
+                                    <input type="text" id="child" name="child" value="0">
+                                    <span class="btn icon-plus"></span>
                                 </div>
                             </div>
                             <input type="submit" value="найти">
                         </form>
                     </div>
                 </div>
-                <div class="map">
-                    <img src="img/map.jpg" alt="Карта Sedona" width="1200" height="473">
-                </div>
             </main>
-            <footer class="main-footer clearfix">
-                <div class="footer-lay-out">
-                    <span>#Visitsedona</span>
+            <div class="map">
+            </div>
+            <footer class="main-footer footer-bg clearfix">
+                <div class="footer-layout">
+                    <span class="visitsedona">#Visitsedona</span>
                 </div>
-                <div class="footer-lay-out">
+                <div class="footer-layout">
                     <div class="social">
-                        <a class="social-btn social-tt" href="#">Твиттер</a>
-                        <a class="social-btn social-fb" href="#">Фэйсбук</a>
-                        <a class="social-btn social-yt" href="#">Ютуб</a>
+                        <a class="social-btn" href="#">Твиттер<span class="icon-twitter"></span></a>
+                        <a class="social-btn" href="#">Фэйсбук<span class="icon-facebook"></span></a>
+                        <a class="social-btn" href="#">Ютуб<span class="icon-youtube"></span></a>
                     </div>
                 </div>
-                <div class="footer-lay-out">
+                <div class="footer-layout">
                     <span>Website by</span>
-                    <a class="developer" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" alt="Htmlacademy" width="113" height="39"></a>
+                    <a class="developer" href="https://htmlacademy.ru"></a>
                 </div>
             </footer>
         </div>
+        <script src="js/search-form.js"></script>
     </body>
 </html>
