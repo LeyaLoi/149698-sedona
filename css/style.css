@@ -234,9 +234,24 @@ h2 {
     background-color: #ffffff;
     display: none;
 }
+@keyframes app {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
 .search-form-on {
     display: block;
+    animation: app 0.5s;
 }
+
 .details {
     position: relative;
     padding-bottom: 30px;
@@ -436,6 +451,9 @@ h2 {
 }
 .developer:active::after {
     background: transparent url("../img/htmlacademy-active.png") no-repeat;
+}
+.date input.search-form-error {
+    border: 2px solid red;
 }
 /*--------------------catalog.html------------------------------------*/
 
