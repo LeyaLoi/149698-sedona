@@ -173,8 +173,8 @@
         <script>
             var link = document.querySelector(".search-btn");
             var popup = document.querySelector(".search-form");
-            link.addEventListener("click", function() {
-                // event.preventDefault();
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
                 popup.classList.add("search-form-on");
             });
         </script>
