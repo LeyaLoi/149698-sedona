@@ -175,8 +175,11 @@ h2 {
     height: 256px;
 }
 .features-bggray {
-    padding-bottom: 45px;
+    padding-bottom: 35px;
     background-color: #eeeeee;
+}
+.gray {
+    padding-top: 48px;
 }
 .features-one-part h3,
 .features-one-part p {
@@ -187,7 +190,7 @@ h2 {
 }
 .features-one-part.big {
     padding-top: 60px;
-    padding-bottom: 58px;
+    padding-bottom: 55px;
 }
 .features-icon {
     width: 76px;
@@ -268,7 +271,7 @@ h2 {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 26px;
-    padding: 0 15px;
+    padding: 0 13px;
     padding-right: 35px;
     box-sizing: border-box;
     border: none;
@@ -327,7 +330,11 @@ h2 {
 }
 
 .details-part label {
-    margin-right: 48px;
+    margin-right: 43px;
+}
+.details-part:last-child label {
+    margin-right: 35px;
+    margin-left: 45px;
 }
 .details-part input[type="text"] {
     width: 37px;
@@ -471,7 +478,7 @@ h2 {
 }
 .filter:last-child {
     float: right;
-    width: 330px;
+    width: 320px;
 }
 .filter .filter-item {
     padding-top: 25px;
@@ -601,7 +608,7 @@ input[type="checkbox"]:checked:disabled + label {
 }
 .btn-transparent {
     display: block;
-    margin: 0 auto;
+    margin: 0 85px;
     padding: 6px 35px;
     font-size: 14px;
     line-height: 21px;
@@ -622,9 +629,13 @@ input[type="checkbox"]:checked:disabled + label {
     margin: 0 auto;
 }
 .content-item {
-    padding: 30px 70px;
+    padding: 25px 70px;
     padding-bottom: 26px;
     border-bottom: 1px solid #e5e5e5;
+}
+.content-item:first-child {
+    padding: 30px 70px;
+    padding-bottom: 30px;
 }
 .content .layout:first-child {
     float: left;
@@ -640,6 +651,9 @@ input[type="checkbox"]:checked:disabled + label {
     text-align: right;
 }
 .layout .sort-caption {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 3px;
     font-size: 12px;
     line-height: 18px;
 }
@@ -648,6 +662,7 @@ input[type="checkbox"]:checked:disabled + label {
     vertical-align: middle;
     margin: 0;
     padding: 0;
+    padding-top: 3px;
     font-size: 12px;
     line-height: 18px;
 }
@@ -698,6 +713,9 @@ input[type="checkbox"]:checked:disabled + label {
     width: 135px;
     height: 90px;
 }
+.content-item .top {
+    margin-top: 3px;
+}
 .layout .hotel-name {
     color: #000000;
 }
@@ -714,6 +732,7 @@ input[type="checkbox"]:checked:disabled + label {
 .hotel-reserve {
     float: left;
     width: 145px;
+    margin-left: 7px;
 }
 .layout h2 {
     margin: 0;
@@ -721,12 +740,12 @@ input[type="checkbox"]:checked:disabled + label {
 .hotel-details p,
 .hotel-reserve p {
     margin: 0;
-    padding: 10px 0;
+    padding: 8px 0 15px;
     color: #333333;
 }
 .hotel-details .btn,
 .hotel-reserve .btn {
-    padding: 4px 16px;
+    padding: 4px 17px;
     color: #ffffff;
 }
 .btn-details {
