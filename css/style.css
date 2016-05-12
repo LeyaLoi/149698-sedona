@@ -221,7 +221,7 @@ h2 {
     background-color: #766357;
     cursor: pointer;
 }
-.search-btn a{
+.search-btn a {
     font: inherit;
     font-size: 21px;
     text-decoration: none;
@@ -664,7 +664,7 @@ input[type="checkbox"]:checked:disabled + label {
     font-size: 12px;
     line-height: 18px;
 }
-.layout .sort  {
+.layout .sort {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
@@ -691,15 +691,15 @@ input[type="checkbox"]:checked:disabled + label {
     font-weight: normal;
     color: #b2b2b2;
     text-decoration: none;
-    border-bottom: 1px dashed #b2b2b2;
+    border-bottom: 1px dotted #b2b2b2;
 }
 .sort a:hover {
     color: #81b3d2;
-    border-bottom: 1px dashed #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
 }
 .sort a:active {
     color: #000000;
-    border-bottom: 1px dashed #000000;
+    border-bottom: 1px dotted #000000;
 }
 .sort a.active {
     border-bottom: none;
@@ -710,11 +710,12 @@ input[type="checkbox"]:checked:disabled + label {
     line-height: 20px;
     color: #cccccc;
 }
-.icon-sort span.active {
-    color: #81b3d2;
-}
 .icon-sort span:hover {
     color: #000000;
+}
+.icon-sort span.active,
+.icon-sort span.active:hover {
+    color: #81b3d2;
 }
 .layout img {
     width: 135px;
