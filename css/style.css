@@ -601,7 +601,7 @@ input[type="checkbox"]:checked:disabled + label {
     background-color: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2)
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
 .filter-controls .toggle-min {
