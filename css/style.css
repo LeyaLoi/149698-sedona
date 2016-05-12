@@ -281,15 +281,15 @@ h2 {
     padding: 0 13px;
     padding-right: 35px;
     box-sizing: border-box;
-    border: none;
+    border: 2px solid transparent;
     background-color: #f2f2f2;
 }
 .date input[type="text"]:hover {
     background-color: #ebebeb;
-    border: none;
+    border: 2px solid transparent;
 }
 .date input[type="text"]:focus {
-    padding: 0 15px;
+    padding: 0 13px;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     outline: none;
