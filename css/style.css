@@ -217,7 +217,14 @@ h2 {
     width: 568px;
     margin: 0 auto;
     padding: 30px 0px;
+    color: #ffffff;
+    background-color: #766357;
+    cursor: pointer;
+}
+.search-btn a{
+    font: inherit;
     font-size: 21px;
+    text-decoration: none;
     line-height: 26px;
     color: #ffffff;
     background-color: #766357;
@@ -274,15 +281,15 @@ h2 {
     padding: 0 13px;
     padding-right: 35px;
     box-sizing: border-box;
-    border: none;
+    border: 2px solid transparent;
     background-color: #f2f2f2;
 }
 .date input[type="text"]:hover {
     background-color: #ebebeb;
-    border: none;
+    border: 2px solid transparent;
 }
 .date input[type="text"]:focus {
-    padding: 0 15px;
+    padding: 0 13px;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     outline: none;
@@ -594,7 +601,7 @@ input[type="checkbox"]:checked:disabled + label {
     background-color: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2)
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
 .filter-controls .toggle-min {

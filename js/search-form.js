@@ -7,9 +7,16 @@ var departure = popup.querySelector("[name=date-departure]");
 var form = popup.querySelector("form");
 
 button.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("search-form-on");
-    arrival.focus();
+    if (popup.classList.contains("search-form-on")) {
+        event.preventDefault();
+        popup.classList.remove("search-form-on");
+        arrival.classList.remove("search-form-error");
+        departure.classList.remove("search-form-error");
+    } else {
+        event.preventDefault();
+        popup.classList.add("search-form-on");
+        arrival.focus();
+    }
 });
 
 form.addEventListener("submit", function(event) {
@@ -17,9 +24,6 @@ form.addEventListener("submit", function(event) {
         event.preventDefault();
         arrival.classList.add("search-form-error");
         departure.classList.add("search-form-error");
-    } else {
-        arrival.classList.remove("search-form-error");
-        departure.classList.remove("search-form-error");
     }
 });
 
