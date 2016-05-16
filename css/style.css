@@ -162,17 +162,22 @@ h2 {
     margin: 0 auto;
     font-size: 21px;
 }
-.features-bgblue {
+.bg-town {
+    min-height: 256px;
     color: #ffffff;
-    background-color: #81b3d2;
+    background: #81b3d2 url("../img/town.jpg") no-repeat;
+    background-size: cover;
+    background-position: 400px 0px;
 }
-.features .features-two-part {
-    float: left;
-    width: 800px;
+.bg-position {
+    float: right;
 }
-.features-two-part img {
-    width: 800px;
-    height: 256px;
+.bg-bridge {
+    min-height: 256px;
+    color: #ffffff;
+    background: #81b3d2 url("../img/bridge.jpg") no-repeat;
+    background-size: cover;
+    background-position: right 400px top 0px;
 }
 .features-bggray {
     padding-bottom: 35px;
